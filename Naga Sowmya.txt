@@ -1,0 +1,162 @@
+//1st Question
+/*
+import java.util.Scanner;
+public class ass{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter first number:");
+        int a = sc.nextInt();
+        System.out.println("Enter second number:");
+        int b = sc.nextInt();
+        System.out.println("Enter third number: ");
+        int c = sc.nextInt();
+        System.out.println("Enter fourth number: ");
+        int d = sc.nextInt();
+        if((a==b) && (b==c) && (c==d) && (d==a)){
+            System.out.println("Numbers are equal");
+        }
+        else{
+            System.out.println("Numbers are not equal");
+        }
+    }
+}
+
+*/
+
+//2nd Question
+/*
+import java.util.Scanner;
+public class ass{
+    public static void main(String[] args){
+        double a,b;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter first number");
+        a = sc.nextDouble();
+        System.out.println("Enter second number");
+        b = sc.nextDouble();
+        if((0<a && a<1) && 0<b && b<1){
+            System.out.println("True");
+
+        }
+        else{
+            System.out.println("False");
+        }
+    }
+}*/
+
+//3rd Question
+/*
+public class ass{
+    public static void main(String[] args){
+        boolean array[][] = {{true, false, true},
+                            {false, true, false} };
+        for(int i=0; i<2; i++){
+            for(int j=0; j<3; j++){
+                if(array[i][j])
+                    System.out.print("t ");
+                   
+                else
+                    System.out.print("f ");
+                }
+                System.out.println();
+            }
+        }
+    }
+
+*/
+
+
+//4th question
+/*
+import java.util.Scanner;
+public class ass{
+    public static void main(String[] args){
+        int[][] twodm = { 
+                        {10, 20, 30},
+                        {40, 50, 60}
+        }; 
+        System.out.print("Original array: \n");
+        print_array(twodm);
+        System.out.print("After changing the rows and columns of the said array:\n");
+        transpose(twodm);
+    }
+
+    private static void transpose(int[][] twodm) {
+
+        int[][] newtwodm = new int[twodm[0].length][twodm.length];
+
+        for(int i = 0;i < twodm.length; i++){
+            for(int j = 0;j < twodm[0].length;j++) {
+                newtwodm[j][i] = twodm[i][j] ;            
+        }
+    }
+    print_array(newtwodm);
+}
+
+    private static void print_array(int[][] twodm){
+        for(int i=0;i<twodm.length;i++){
+            for(int j=0;j<twodm[0].length;j++){
+                System.out.print(twodm[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+*/
+
+//5th question
+/*
+import java.util.Scanner;
+    public class ass
+    {
+        public static void main(String[] args) {
+            int arr[] = {1,4,17,7,25,3,100};
+            Scanner sc = new Scanner(System.in);
+            
+            System.out.println("Enter k value : ");
+            int k = sc.nextInt();
+            
+            for(int i=0;i<arr.length;i++)
+            {
+                for(int j=0;j<i;j++)
+                {
+                    if(arr[i]>arr[j])
+                    {
+                        int temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                    }
+                }
+            }
+            System.out.println(k+" Largest elements of said array are : ");
+            for(int i=0;i<k;i++)
+            {
+                System.out.print(arr[i]+" ");
+            }
+        }
+    }
+*/
+
+//6th question
+/*
+import java.util.Scanner;
+    public class ass {	
+        public static int countBitsTozeroBasedOnString(int n) {
+        int ctr = 0;
+        String binaryNumber = Integer.toBinaryString(n);
+        System.out.print("Binary representation of "+n+" is: "+binaryNumber);
+        for (char ch : binaryNumber.toCharArray()) {
+          ctr += ch == '0' ? 1 : 0;
+        }
+        return ctr;
+      }	
+        
+        public static void main(String[] args) {
+            Scanner in = new Scanner(System.in);
+            System.out.print("Input first number: ");
+            int n = in.nextInt();
+            System.out.println("\nNumber of zero bits: " + countBitsTozeroBasedOnString(n));
+            }
+    
+        }
+*/
